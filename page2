@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>התחלה חדשה</title>
+</head>
+<body>
+    <div id="message"></div>
+
+    <script>
+        if (!sessionStorage.getItem('visited')) {
+            document.getElementById('message').innerHTML = 'ברוכים הבאים לביקור הראשון!';
+            sessionStorage.setItem('visited', 'true');
+        } else {
+            document.getElementById('message').innerHTML = 'ברוכים השבים! זו כבר התחלה חדשה.';
+        }
+    </script>
+</body>
+</html>
